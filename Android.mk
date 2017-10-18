@@ -25,7 +25,7 @@ LOCAL_CFLAGS += -DOPUS_ARM_ASM -DOPUS_ARM_INLINE_ASM \
                     -DOPUS_HAVE_RTCD
 # DSP, MEDIA and NEON instructions are in the same assembler file - thus we
 # need to include it even if NEON is not supported on target platform.
-LOCAL_SRC_FILES += $(subst .s,_gnu.s,$(CELT_SOURCES_ARM_ASM))
+LOCAL_SRC_FILES += $(subst .s,-gnu.s,$(CELT_SOURCES_ARM_ASM))
 
 LOCAL_SRC_FILES += $(CELT_SOURCES_ARM_NEON_INTR) \
                        $(SILK_SOURCES_ARM_NEON_INTR) \
