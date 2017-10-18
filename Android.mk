@@ -1,4 +1,6 @@
-LOCAL_PATH := $(call my-dir)
+ROOT := $(call my-dir)
+
+LOCAL_PATH := $(ROOT)/opus
 include $(CLEAR_VARS)
 include $(LOCAL_PATH)/celt_sources.mk
 include $(LOCAL_PATH)/opus_sources.mk
