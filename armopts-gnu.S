@@ -27,10 +27,10 @@
 
 @ Set the following to 1 if we have EDSP instructions
 @  (LDRD/STRD, etc., ARMv5E and later).
- .set OPUS_ARM_MAY_HAVE_EDSP, 0
+ .set OPUS_ARM_MAY_HAVE_EDSP, 1
 
 @ Set the following to 1 if we have ARMv6 media instructions.
- .set OPUS_ARM_MAY_HAVE_MEDIA, 0
+ .set OPUS_ARM_MAY_HAVE_MEDIA, 1
 
 @ Set the following to 1 if we have NEON (some ARMv7)
  .set OPUS_ARM_MAY_HAVE_NEON, 1
